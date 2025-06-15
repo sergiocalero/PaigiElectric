@@ -55,11 +55,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<style type="text/css">			#mapa_div { height: 100% }		</style>			
 		
 		<script>
+		setTimeout(function() {	
+			var cookieConsent = localStorage.getItem('cookieConsent');
+			if (cookieConsent === 'false' || cookieConsent === null) {
+				showcookieConsent();
+			}
+		}, 100);
+		function showcookieConsent() {
+			var cookieChoiceElement = document.getElementById('cookieChoiceInfo');
+			cookieChoiceElement.style.display = 'block';
+		}
 		function _removeCookieConsent() {
 		  var cookieChoiceElement = document.getElementById('cookieChoiceInfo');
 		  if (cookieChoiceElement != null) {
 			cookieChoiceElement.parentNode.removeChild(cookieChoiceElement);
 		  }
+		  localStorage.setItem('cookieConsent', 'true');
 		}
 		</script>
 	
@@ -86,19 +97,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<span class="image avatar">
 				<a href="http://paigielectric.es/" title="Paigi Electric"><img src="images/logo-paigi.png" alt="Paigi Electric" title="Paigi Electric"/></a>
 			</span>
-			<h1 id="logo"><a href="http://paigielectric.es/" title="Paigi Electric">Paigi Electric</a></h1>
+			<h1 id="logo"><a href="http://paigielectric.es/" class="title" title="Paigi Electric">Paigi Electric</a></h1>
 			<p>Teléfono: <a href="tel:630 847 550">630 847 550</a></p>
 			<p><span class="warning">Abierto 24 horas</span></p>
 			<p>Instalador Eléctrico Autorizado</p>
 		</header>				
 		<nav id="nav">					
 			<ul>						
-				<li><a href="#one" class="active" title="Quienes somos">Quiénes somos</a></li>
-				<li><a href="#three" title="La Empresa">La Empresa</a></li>
-				<li><a href="#four" title="Productos y servicios">Productos y servicios</a></li>
+				<li><a href="#quienessomos" class="active" title="Quienes somos">Quiénes somos</a></li>
+				<li><a href="#laempresa" title="La Empresa">La Empresa</a></li>
+				<li><a href="#productos" title="Productos y servicios">Productos y servicios</a></li>
+				<li><a href="#contacto" title="Contacto">Contacto</a></li>
 				<li><a href="http://paigielectric.es/cargadores.html" title="Cargadores para coches eléctricos">Cargadores para coches eléctricos</a></li>
 				<li><a href="http://paigielectric.es/imagenes.html" title="Imágenes de Mantenimientos">Imágenes de Mantenimientos</a></li>
-				<li><a href="#six" title="Contacto">Contacto</a></li>
+
 			</ul>				
 		</nav>
 	</section>		
@@ -110,7 +122,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<section id="one">
 				<div class="container">
 					<header class="major">
-<p>SOLICITE PRESUPUESTO SIN COMPROMISO: <span style="color: #B71C1C;"><br/><a href="tel:630 847 550">630 847 550</a></span></p>
+<p style="font-weight: bold;">SOLICITE PRESUPUESTO SIN COMPROMISO:</p>
+<p><span class="telefono">Teléfono: <a href="tel:630 847 550">630 847 550</a></span></p>
 <p>Empresa de Instalaciones Eléctricas (zona Marina Alta: Dénia/Jávea/Ondara/Oliva/...).</p>
 <p><span style="color: #B71C1C;">Abierto 24 horas</span></p>
 
@@ -120,8 +133,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- <p>Somos la mejor opción en la zona de <strong>Dénia/Jávea</strong>, en lo que a Instalaciones Eléctricas de baja tensión se refiere.</p> -->
 <p><strong>¿Tiene un coche eléctrico?</strong> Le instalamos el sistema de recarga en su domicilio.</p>
 <p>Póngase en contacto con nosotros y le informaremos:</br>
-<strong>Teléfono: <a href="tel:630 847 550">630 847 550</a>
-</br><a href="mailto: paigielectric@gmail.com" title="Email Paigi Electric" target="_blank">Email</a></strong></p>
+<strong>Teléfono: <a href="tel:630 847 550">630 847 550</a></p>
+<p><a href="mailto: paigielectric@gmail.com" title="Email Paigi Electric" target="_blank">Email</a></strong></p>
 <p><strong>Carnet de Instalador 2199315, autorizado por el Ministerio de Industria desde el año 2003.</strong></p>
 						
 						<div id="mapa_div" style="width:100%; height:100%"></div>
@@ -129,7 +142,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</div>							
 			</section>
 			<!-- Three --> <!-- La Empresa-->
-			<section id="three">								
+			<section id="laempresa">								
 				<div class="container">	
 					<h3>La Empresa</h3>
 					<header class="major">										
@@ -142,7 +155,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</div>							
 			</section>
 			<!-- Four --> <!-- Productos y servicios -->
-			<section id="four">
+			<section id="productos">
 				<div class="container">
 					<h3>Productos y Servicios</h3>				
 					<header class="major">										
@@ -175,7 +188,7 @@ capaz de satisfacer las necesidades de nuestros clientes.</p>
 				</div>							
 			</section>			
 			<!-- Six -->
-			<section id="six">
+			<section id="contacto">
 				<div class="container">
 					<h3>Datos de Contacto</h3>
 					<div class="features">
