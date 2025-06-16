@@ -48,21 +48,56 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	.row-100 {
+		width: 100%;
+	}
+
+	.w-50 {
+		width: 50%;
+	}
 	#main {
 		 min-height: 781px;
 	}
 
-	.telefono {
+	.box-telefono, .box-whatsapp {
+		border: 1px solid none;
 		background-color: #ffd038;
 		border-radius: 5px;
-		padding: 1em;
-		width: 14em;
+		height: 60px;
+		line-height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.box-whatsapp {
+		background-color: #075E54;
+	}
+
+	.telefono, .whatsapp {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+	}
+
+	.telefono {
 		text-align: center;
 		text-decoration: none;
 	}
 
 	.telefono a:hover {
 		color: #000070;
+	}
+
+	.whatsapp {
+		text-align: center;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.whatsapp a{
+		color: #fff;
 	}
 
 /* Box Model */
