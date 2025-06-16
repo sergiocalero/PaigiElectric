@@ -12,9 +12,9 @@
     "postalCode": "03700"
   },
   "telephone": "+34 630 847 550",
-  "areaServed": ["Dénia", "Jávea", "Ondara", "Oliva"],
+  "areaServed": ["Dénia", "Jávea", "Ondara"],
   "url": "http://paigielectric.es",
-  "description": "Electricista autorizado en Dénia, Jávea, Ondara y Oliva. Especialistas en instalaciones, reformas eléctricas y boletines.",
+  "description": "Electricista autorizado en Dénia, Jávea, Ondara. Especialistas en instalaciones, reformas eléctricas y boletines.",
   "openingHours": "Mo-Su 00:00-23:59",
   "geo": {
     "@type": "GeoCoordinates",
