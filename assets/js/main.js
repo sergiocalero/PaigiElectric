@@ -39,17 +39,13 @@
 				$nav_a
 					.scrolly({ offset: 44 })
 					.on('click', function(event) {
-
 						var $this = $(this),
 							href = $this.attr('href');
-
 						// Not an internal link? Bail.
 							if (href.charAt(0) != '#')
 								return;
-
 						// Prevent default behavior.
 							event.preventDefault();
-
 						// Remove active class from all links and mark them as locked (so scrollzer leaves them alone).
 							$nav_a
 								.removeClass('active')
@@ -57,10 +53,8 @@
 
 						// Set active class on this link.
 							$this.addClass('active');
-
 					})
 					.each(function() {
-
 						var $this = $(this),
 							href = $this.attr('href'),
 							id;
@@ -73,7 +67,6 @@
 							id = href.substring(1);
 							$this.attr('id', id + '-link');
 							ids.push(id);
-
 					});
 
 			// Initialize scrollzer.
@@ -82,13 +75,10 @@
 		// Off-Canvas Navigation.
 
 			// Title Bar.
-				$(
-					'<div id="titleBar">' +
+				$('<div id="titleBar">' +
 						'<a href="#header" class="toggle"></a>' +
 						'<span class="title">' + $('#logo').html() + '</span>' +
-					'</div>'
-				)
-					.appendTo($body);
+					'</div>').appendTo($body);
 
 			// Header.
 				$('#header')

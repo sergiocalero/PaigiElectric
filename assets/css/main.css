@@ -54,7 +54,7 @@
 
 	.w-50 {
 		width: 50%;
-	}
+	}	
 	#main {
 		 min-height: 781px;
 	}
@@ -1652,6 +1652,10 @@
 		border-color: #B71C1C;
 		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 		transform: translateY(-2px);
+	}
+
+	.border-top {
+		border-top: 1px solid #ffd038;
 	}
 
 	.container > section.active {
