@@ -1,18 +1,6 @@
 <!DOCTYPE HTML>
-<!--	Read Only by HTML5 UP	html5up.net | @n33co	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)-->
 <html>	
 <head>
-	<!-- Google tag (gtag.js) -->
-	 <!--
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XSMY69BLLJ"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-XSMY69BLLJ');
-	</script>
-	-->
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -54,15 +42,8 @@
 	<meta property="og:image" content="https://paigielectric.es/images/logo-paigi.png" />
 	<meta property="og:url" content="https://paigielectric.es/" />
 	<link rel="canonical" href="https://paigielectric.es/" />
-	  
-	
-	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->		
-	<link rel="stylesheet" href="assets/css/main.css" />		
-	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	
-	<script type="text/javascript">		  function inicializar_mapa() {			var mapOptions = {			  center: new google.maps.LatLng(37.774807, -3.795573),			  zoom: 10,			  mapTypeId: google.maps.MapTypeId.ROADMAP			};			var map = new google.maps.Map(document.getElementById("mapa_div"),				mapOptions);		  }		
-	</script>		
-	<style type="text/css">			#mapa_div { height: 100% }		</style>			
+	  	
+	<link rel="stylesheet" href="assets/css/main.css" />
 		
 		<script>
 		setTimeout(function() {	
@@ -193,6 +174,7 @@
 								<th>Potencia</th>
 								<th>Conector</th>
 								<th>PVP (IVA No Incluido)</th>
+								<th>Imagen</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -204,6 +186,7 @@
 								<td data-th="Potencia">7,4kW</td>
 								<td data-th="Conector">T2</td>
 								<td data-th="PVP (IVA No Incluido)">610,00 €</td>
+								<td data-th="Imagen"><img class="img-fluid" onclick="openModal('images/cargadores/Policharger-ON-T2-ON-191-T23F-192.png', 'Policharger ON-T2')" src="images/cargadores/Policharger-ON-T2-ON-191-T23F-192.png" alt="Policharger ON-T2" title="Policharger ON-T2" /></td>
 							</tr>
 							<tr>
 								<td data-th="Código">192</td>
@@ -213,6 +196,7 @@
 								<td data-th="Potencia">22kW</td>
 								<td data-th="Conector">T2</td>
 								<td data-th="PVP (IVA No Incluido)">664,00 €</td>
+								<td data-th="Imagen"><img class="img-fluid" onclick="openModal('images/cargadores/Policharger-ON-T2-ON-191-T23F-192.png', 'Policharger ON-T23F')" src="images/cargadores/Policharger-ON-T2-ON-191-T23F-192.png" alt="Policharger ON-T23F" title="Policharger ON-T23F" /></td>
 							</tr>
 							<tr>
 								<td data-th="Código">161</td>
@@ -222,6 +206,7 @@
 								<td data-th="Potencia">7,4kW</td>
 								<td data-th="Conector">T2</td>
 								<td data-th="PVP (IVA No Incluido)">630,00 €</td>
+								<td data-th="Imagen"><img class="img-fluid" onclick="openModal('images/cargadores/Policharger-NW-T2-161-NW-T23F-162.png', 'Policharger NW-T2')" src="images/cargadores/Policharger-NW-T2-161-NW-T23F-162.png" alt="Policharger NW-T2" title="Policharger NW-T2" /></td>
 							</tr>							
 							<tr>
 								<td data-th="Código">162</td>
@@ -231,6 +216,7 @@
 								<td data-th="Potencia">22kW</td>
 								<td data-th="Conector">T2</td>
 								<td data-th="PVP (IVA No Incluido)">695,00 €</td>
+								<td data-th="Imagen"><img class="img-fluid" onclick="openModal('images/cargadores/Policharger-NW-T2-161-NW-T23F-162.png', 'Policharger NW-T23F')" src="images/cargadores/Policharger-NW-T2-161-NW-T23F-162.png" alt="Policharger NW-T23F" title="Policharger NW-T23F" /></td>
 							</tr>
 						</tbody>
 					</table>
@@ -250,26 +236,26 @@
 				</ul>
 			</div>
 		</section>
+
+		<!-- Modal -->
+		<div id="imageModalWrapper" class="modal">
+			<div class="modal-content">
+				<span class="close" title="Cerrar">&times;</span>
+				<img id="modalImage" src="" alt="" title="">
+				<span id="modalImageTitle"></span>
+			</div>
+		</div>
+
 	</div>
+
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollzer.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>	
 	<script src="assets/js/skel.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 	<script src="assets/js/main.js"></script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-88765325-1', 'auto');
-  ga('send', 'pageview');
-
-</script>	
 	
 	</body>
 </html>

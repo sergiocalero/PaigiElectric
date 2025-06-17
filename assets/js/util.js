@@ -464,4 +464,34 @@
 					}
 			});
 	};
+	
 })(jQuery);
+
+// Modal functionality
+function openModal(imageSrc, imageAlt) {
+    var modal = document.getElementById("imageModalWrapper");
+    var modalImg = document.getElementById("modalImage");
+	var modalImgTitle = document.getElementById("modalImageTitle");
+    modal.style.display = "block";
+    modalImg.src = imageSrc;
+    modalImg.alt = imageAlt;
+	modalImgTitle.innerHTML = imageAlt;
+}
+
+// Close modal when clicking the X or outside the image
+document.addEventListener('DOMContentLoaded', function() {
+    var closeBtn = document.querySelector(".close");
+    var modal = document.getElementById("imageModalWrapper");
+
+    if (closeBtn) {
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+});

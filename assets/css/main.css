@@ -58,6 +58,10 @@
 	#main {
 		 min-height: 781px;
 	}
+	.img-fluid {
+		width: 20%;
+		height: auto;
+	}	
 
 	.box-telefono, .box-whatsapp {
 		border: 1px solid none;
@@ -1625,6 +1629,47 @@
 
 /* Basic */
 
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    margin: 5% auto;
+    padding: 20px;
+    width: 22%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#modalImage {
+    max-width: 100%;
+    height: auto;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
 	body {
 		background: #fff;
 	}
@@ -2346,7 +2391,7 @@
 	}
 
 	table td {
-		padding: 0.75em 0.75em;
+		vertical-align: middle;
 	}
 
 	table th {
