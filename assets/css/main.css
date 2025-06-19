@@ -138,7 +138,7 @@
 	}
 
 	.container {
-		width: 45em;
+		width: 46em;
 	}
 
 	.box-price {
@@ -269,6 +269,10 @@
 	}
 
 	@media screen and (max-width: 480px) {
+
+		.modal {
+			top: 3em;
+		}
 
 		.container.\31 25\25 {
 			width: 100%;
@@ -1415,7 +1419,7 @@
 	@media screen and (max-width: 480px) {
 
 		.row > * {
-			padding: 0 0 0 1.25em;
+			padding: 0 0 0 0.25em;
 		}
 
 		.row {
@@ -1643,7 +1647,7 @@
 
 .modal-content {
     position: relative;
-    margin: 5% auto;
+    margin: 1% auto;
     padding: 20px;
     width: 90%;
     max-width: 900px;
@@ -3120,7 +3124,7 @@
 		*/
 		height: 74px;
 		line-height: 74px;
-		font-size: 28pt;
+		font-size: 27pt;
 	}
 
 	#titleBar .title a {
