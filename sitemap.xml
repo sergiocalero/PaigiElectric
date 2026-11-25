@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url><loc>http://paigielectric.es/</loc></url>
-<url><loc>http://paigielectric.es/index.html</loc></url>
-<url><loc>http://paigielectric.es/imagenes.html</loc></url>
-<url><loc>http://paigielectric.es/cargadores.html</loc></url>
-<url><loc>http://paigielectric.es/cargadores_IN.html</loc></url>
-<url><loc>http://paigielectric.es/cargadores_PRO.html</loc></url>
-<url><loc>http://paigielectric.es/cargadores_portatiles.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://paigielectric.es/</loc></url>
+  <url><loc>https://paigielectric.es/cargadores.html</loc></url>
+  <url><loc>https://paigielectric.es/imagenes.html</loc></url>
 </urlset>

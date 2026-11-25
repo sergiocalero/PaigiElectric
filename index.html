@@ -1,268 +1,748 @@
-<!DOCTYPE HTML>
-<html>	
-<head>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="t.index">
+      Paigi Electric - Electricista en Dénia y Jávea | Instalaciones y Boletines
+    </title>
+    <meta
+      name="description"
+      content="Electricista autorizado en Dénia, Jávea y Ondara: boletines eléctricos, reformas, cargadores de coche eléctrico e iluminación de jardines. Llame al 630 847 550."
+      data-i18n-attr="content:d.index"
+    />
+    <link rel="canonical" href="https://paigielectric.es/" />
+    <meta name="theme-color" content="#0a1f44" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Paigi Electric" />
+    <meta
+      property="og:title"
+      content="Paigi Electric - Electricista en Dénia y Jávea | Instalaciones y Boletines"
+    />
+    <meta
+      property="og:description"
+      content="Electricista autorizado en Dénia, Jávea y Ondara: boletines eléctricos, reformas, cargadores de coche eléctrico e iluminación de jardines. Llame al 630 847 550."
+    />
+    <meta property="og:url" content="https://paigielectric.es/" />
+    <meta
+      property="og:image"
+      content="https://paigielectric.es/images/og-image.jpg"
+    />
+    <meta property="og:locale" content="es_ES" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="images/icons/icon-32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="images/icons/icon-180.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Electrician",
+        "name": "Paigi Electric",
+        "image": "https://paigielectric.es/images/og-image.jpg",
+        "logo": "https://paigielectric.es/images/icons/icon-512.png",
+        "url": "https://paigielectric.es/",
+        "telephone": "+34630847550",
+        "email": "paigielectric@gmail.com",
+        "description": "Electricista autorizado en Dénia, Jávea y Ondara. Especialistas en instalaciones, reformas eléctricas, boletines y cargadores de coche eléctrico.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dénia",
+          "addressRegion": "Alicante",
+          "postalCode": "03700",
+          "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 38.84,
+          "longitude": 0.1057
+        },
+        "areaServed": ["Dénia", "Jávea", "Ondara"],
+        "openingHours": "Mo-Su 00:00-23:59",
+        "sameAs": ["https://wa.me/34630847550"]
+      }
+    </script>
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <svg
+      width="0"
+      height="0"
+      style="position: absolute"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <defs>
+        <symbol id="i-phone" viewBox="0 0 24 24">
+          <path
+            d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"
+          />
+        </symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24">
+          <rect x="2" y="4" width="20" height="16" rx="2" />
+          <path d="m22 7-10 6L2 7" />
+        </symbol>
+        <symbol id="i-wa" viewBox="0 0 24 24">
+          <path d="M3 21l1.7-5A9 9 0 1 1 8 19.3z" />
+          <path
+            d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.3-2-1-.9.7a4 4 0 0 1-1.6-1.6l.7-.9-1-2z"
+          />
+        </symbol>
+        <symbol id="i-network" viewBox="0 0 24 24">
+          <rect x="9" y="2" width="6" height="6" rx="1" />
+          <rect x="2" y="16" width="6" height="6" rx="1" />
+          <rect x="16" y="16" width="6" height="6" rx="1" />
+          <path d="M12 8v4M5 16v-2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v2" />
+        </symbol>
+        <symbol id="i-plug" viewBox="0 0 24 24">
+          <path d="M9 2v6M15 2v6M7 8h10v4a5 5 0 0 1-10 0z" />
+          <path d="M12 17v5" />
+        </symbol>
+        <symbol id="i-sun" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="4" />
+          <path
+            d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+          />
+        </symbol>
+        <symbol id="i-wrench" viewBox="0 0 24 24">
+          <path
+            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+          />
+        </symbol>
+        <symbol id="i-file" viewBox="0 0 24 24">
+          <path
+            d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+          />
+          <path d="M14 2v6h6M8 13h8M8 17h5" />
+        </symbol>
+        <symbol id="i-bulb" viewBox="0 0 24 24">
+          <path
+            d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2V18h6v-1.3c0-.8.4-1.5 1-2A7 7 0 0 0 12 2z"
+          />
+        </symbol>
+        <symbol id="i-lamp" viewBox="0 0 24 24">
+          <path d="M8 22h8M12 22V10M7 10h10l-2-6H9zM12 2v2" />
+        </symbol>
+        <symbol id="i-building" viewBox="0 0 24 24">
+          <path
+            d="M4 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18M16 10h2a2 2 0 0 1 2 2v10M2 22h20M8 6h4M8 10h4M8 14h4"
+          />
+        </symbol>
+        <symbol id="i-check" viewBox="0 0 24 24">
+          <path d="m5 12 5 5L20 7" />
+        </symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24">
+          <path d="M5 12h14M13 6l6 6-6 6" />
+        </symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </symbol>
+        <symbol id="i-close" viewBox="0 0 24 24">
+          <path d="M6 6l12 12M18 6 6 18" />
+        </symbol>
+        <symbol id="i-award" viewBox="0 0 24 24">
+          <circle cx="12" cy="8" r="6" />
+          <path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5" />
+        </symbol>
+        <symbol id="i-id" viewBox="0 0 24 24">
+          <rect x="2" y="5" width="20" height="14" rx="2" />
+          <circle cx="8" cy="12" r="2" />
+          <path d="M14 10h5M14 14h4M5 17c.5-1.5 1.7-2 3-2s2.5.5 3 2" />
+        </symbol>
+        <symbol id="i-clock" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 6v6l4 2" />
+        </symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24">
+          <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z" />
+          <circle cx="12" cy="10" r="3" />
+        </symbol>
+      </defs>
+    </svg>
+    <a class="skip" href="#contenido" data-i18n="skip">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html" aria-label="Paigi Electric"
+          ><img src="images/logo.svg" width="39" height="42" alt="" /><span
+            ><b>Paigi Electric</b
+            ><small data-i18n="tr1.l"
+              >Instalador autorizado por el Ministerio de Industria</small
+            ></span
+          ></a
+        >
+        <nav
+          class="nav"
+          id="nav"
+          aria-label="Principal"
+          data-i18n-attr="aria-label:nav.menu"
+        >
+          <ul>
+            <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+            <li><a href="#empresa" data-i18n="nav.about">Quiénes somos</a></li>
+            <li>
+              <a href="cargadores.html" data-i18n="nav.chargers">Cargadores</a>
+            </li>
+            <li><a href="imagenes.html" data-i18n="nav.work">Trabajos</a></li>
+            <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="actions">
+          <select
+            class="lang"
+            id="lang"
+            aria-label="Idioma"
+            data-i18n-attr="aria-label:nav.lang"
+          >
+            <option value="es">ES</option>
+            <option value="ca">VAL</option>
+            <option value="en">EN</option>
+            <option value="de">DE</option>
+            <option value="fr">FR</option>
+          </select>
+          <a class="btn btn-primary head-call" href="tel:+34630847550"
+            ><svg class="i" aria-hidden="true" focusable="false">
+              <use href="#i-phone" /></svg
+            >630 847 550</a
+          >
+          <button
+            class="menu-btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav"
+            aria-label="Menú"
+            data-i18n-attr="aria-label:nav.menu"
+          >
+            <svg class="i i-open" aria-hidden="true" focusable="false">
+              <use href="#i-menu" /></svg
+            ><svg class="i i-close" aria-hidden="true" focusable="false">
+              <use href="#i-close" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="contenido">
+      <section class="hero">
+        <div class="wrap">
+          <div>
+            <span class="badge"
+              ><span class="dot"></span
+              ><span data-i18n="hero.badge">Abierto 24 horas</span></span
+            >
+            <h1 data-i18n="hero.title">
+              Instalaciones eléctricas profesionales en la <em>Marina Alta</em>
+            </h1>
+            <p class="lead" data-i18n="hero.lead">
+              Instalador autorizado por el Ministerio de Industria desde 2003.
+              Trabajos urgentes y proyectos planificados en Dénia, Jávea, Ondara
+              y alrededores.
+            </p>
+            <div class="cta">
+              <a class="btn btn-primary" href="tel:+34630847550"
+                ><svg class="i" aria-hidden="true" focusable="false">
+                  <use href="#i-phone" /></svg
+                ><span data-i18n="hero.call">Llamar ahora</span></a
+              >
+              <a
+                class="btn btn-wa"
+                href="https://wa.me/34630847550"
+                target="_blank"
+                rel="noopener"
+                ><svg class="i" aria-hidden="true" focusable="false">
+                  <use href="#i-wa" /></svg
+                >WhatsApp</a
+              >
+              <a class="btn btn-ghost" href="mailto:paigielectric@gmail.com"
+                ><svg class="i" aria-hidden="true" focusable="false">
+                  <use href="#i-mail" /></svg
+                ><span data-i18n="hero.mail">Enviar un email</span></a
+              >
+            </div>
+          </div>
+          <div class="hero-img">
+            <img
+              src="images/hero-1024.webp"
+              srcset="images/hero-640.webp 640w, images/hero-1024.webp 1024w"
+              sizes="(max-width:1000px) 92vw, 520px"
+              width="1024"
+              height="1024"
+              fetchpriority="high"
+              alt="Contadores y cuadros eléctricos instalados en una vivienda junto al mar"
+              data-i18n-attr="alt:hero.alt"
+            />
+          </div>
+        </div>
+      </section>
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-WM8959N');</script>
-	<!-- End Google Tag Manager -->
+      <div class="trust">
+        <div class="wrap">
+          <ul>
+            <li>
+              <svg class="i" aria-hidden="true" focusable="false">
+                <use href="#i-award" />
+              </svg>
+              <div>
+                <strong data-i18n="tr1.v">Desde 2003</strong
+                ><span data-i18n="tr1.l"
+                  >Instalador autorizado por el Ministerio de Industria</span
+                >
+              </div>
+            </li>
+            <li>
+              <svg class="i" aria-hidden="true" focusable="false">
+                <use href="#i-id" />
+              </svg>
+              <div>
+                <strong data-i18n="tr2.v">Nº 2199315</strong
+                ><span data-i18n="tr2.l">Carnet de instalador</span>
+              </div>
+            </li>
+            <li>
+              <svg class="i" aria-hidden="true" focusable="false">
+                <use href="#i-clock" />
+              </svg>
+              <div>
+                <strong data-i18n="tr3.v">24 h</strong
+                ><span data-i18n="tr3.l"
+                  >Atención urgente, abierto las 24 horas</span
+                >
+              </div>
+            </li>
+            <li>
+              <svg class="i" aria-hidden="true" focusable="false">
+                <use href="#i-pin" />
+              </svg>
+              <div>
+                <strong data-i18n="tr4.v">Marina Alta</strong
+                ><span data-i18n="tr4.l"
+                  >Dénia, Jávea, Ondara y alrededores</span
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-	<title>Paigi Electric - Electricista en Dénia y Jávea | Instalaciones y Boletines</title>
+      <section class="section" id="servicios">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="eyebrow" data-i18n="nav.services">Servicios</span>
+            <h2 data-i18n="sv.title">Productos y servicios</h2>
+            <p data-i18n="sv.lead">
+              En una instalación eléctrica, por sencilla que sea, es importante
+              cumplir los parámetros establecidos para garantizar su buen
+              funcionamiento. Por eso conviene contratar una empresa responsable
+              y profesional que ofrezca todo tipo de garantías.
+            </p>
+            <p data-i18n="sv.lead2">
+              En nuestra empresa apostamos por la mejora continua, incrementando
+              nuestros servicios e integrando nuevos recursos y tecnología, que
+              nos ha permitido posicionarnos como una empresa solvente de
+              referencia, capaz de satisfacer las necesidades de nuestros
+              clientes.
+            </p>
+          </div>
+          <div class="cards">
+            <article class="card">
+              <div class="ico">
+                <svg class="i" aria-hidden="true" focusable="false">
+                  <use href="#i-network" />
+                </svg>
+              </div>
+              <h3 data-i18n="sv1.t">Redes eléctricas de baja tensión</h3>
+              <p data-i18n="sv1.d">Servicio integral y garantizado.</p>
+            </article>
+            <article class="card">
+              <div class="ico">
+                <svg class="i" aria-hidden="true" focusable="false">
+                  <use href="#i-plug" />
+                </svg>
+              </div>
+              <h3 data-i18n="sv2.t">Cargadores de coche eléctrico</h3>
+              <p data-i18n="sv2.d">
+                Instalamos el sistema de recarga en su domicilio.
+              </p>
+            </article>
+            <article class="card">
+              <div class="ico">
+                <svg class="i" aria-hidden="true" focusable="false">
+                  <use href="#i-wrench" />
+                </svg>
+              </div>
+              <h3 data-i18n="sv4.t">Instalaciones y reformas</h3>
+              <p data-i18n="sv4.d">
+                Reformas eléctricas y ampliaciones de potencia.
+              </p>
+            </article>
+            <article class="card">
+              <div class="ico">
+                <svg class="i" aria-hidden="true" focusable="false">
+                  <use href="#i-file" />
+                </svg>
+              </div>
+              <h3 data-i18n="sv5.t">Boletines eléctricos</h3>
+              <p data-i18n="sv5.d">
+                Esquemas, planos y memorias. Solicitamos el alta en la compañía
+                y hacemos las gestiones pertinentes.
+              </p>
+            </article>
+            <article class="card">
+              <div class="ico">
+                <svg class="i" aria-hidden="true" focusable="false">
+                  <use href="#i-bulb" />
+                </svg>
+              </div>
+              <h3 data-i18n="sv6.t">Iluminación de jardines</h3>
+              <p data-i18n="sv6.d">Iluminación exterior para jardines.</p>
+            </article>
+            <article class="card">
+              <div class="ico">
+                <svg class="i" aria-hidden="true" focusable="false">
+                  <use href="#i-building" />
+                </svg>
+              </div>
+              <h3 data-i18n="sv8.t">Mantenimiento de comunidades</h3>
+              <p data-i18n="sv8.d">
+                Mantenimiento de las instalaciones eléctricas de comunidades de
+                vecinos.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-	<link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="images/icons/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
-	<link rel="manifest" href="images/icons/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
+      <section class="section alt" id="empresa">
+        <div class="wrap about">
+          <img
+            src="images/empresa-640.webp"
+            srcset="
+              images/empresa-640.webp   640w,
+              images/empresa-1024.webp 1024w
+            "
+            sizes="(max-width:1000px) 92vw, 460px"
+            width="1024"
+            height="1024"
+            loading="lazy"
+            decoding="async"
+            alt="Cuadros eléctricos y cableado en la fachada de un edificio"
+            data-i18n-attr="alt:ab.alt"
+          />
+          <div>
+            <span class="eyebrow" data-i18n="nav.about">Quiénes somos</span>
+            <h2 data-i18n="ab.title">La empresa</h2>
+            <p data-i18n="ab.p1">
+              Nos ajustamos a las necesidades de cada cliente con un servicio
+              integral y personalizado.
+            </p>
+            <ul class="ticks">
+              <li>
+                <svg class="i" aria-hidden="true" focusable="false">
+                  <use href="#i-check" /></svg
+                ><span data-i18n="ab.i1"
+                  >Servicio integral y personalizado</span
+                >
+              </li>
+              <li>
+                <svg class="i" aria-hidden="true" focusable="false">
+                  <use href="#i-check" /></svg
+                ><span data-i18n="ab.i2"
+                  >Atención rápida: todo nuestro personal dispone de teléfono
+                  para realizar los servicios lo antes posible</span
+                >
+              </li>
+              <li>
+                <svg class="i" aria-hidden="true" focusable="false">
+                  <use href="#i-check" /></svg
+                ><span data-i18n="ab.i3"
+                  >Personal altamente cualificado y con la máxima competencia
+                  profesional</span
+                >
+              </li>
+            </ul>
+            <p data-i18n="ab.p2">
+              En nuestra empresa apostamos por la mejora continua, incrementando
+              nuestros servicios e integrando nuevos recursos y tecnología, que
+              nos ha permitido posicionarnos como una empresa solvente de
+              referencia, capaz de satisfacer las necesidades de nuestros
+              clientes.
+            </p>
+            <div class="brands">
+              <span data-i18n="ab.brands"
+                >Confiamos en las primeras marcas del sector: </span
+              ><span class="chip">Pirelli</span>
+              <span class="chip">Legrand</span>
+              <span class="chip">Simon</span>
+              <span class="chip">Scheneider</span>
+              <span class="chip">Aiscan</span>
+              <span class="chip">Cervi</span>
+              <span class="chip">Toscano</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-	<meta charset="utf-8" />		
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+      <section class="section" id="cargadores">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="eyebrow" data-i18n="nav.services"
+              >Instalación de Cargadores Eléctricos</span
+            >
+            <h2 data-i18n="sv.title">Policharger</h2>
+          </div>
+          <div class="band">
+            <div>
+              <h2 data-i18n="ev.title">¿Tiene un coche eléctrico?</h2>
+              <p data-i18n="ev.text">
+                Le instalamos el sistema de recarga en su domicilio. Póngase en
+                contacto con nosotros y le indicaremos cuál es el cargador más
+                adecuado a sus necesidades.
+              </p>
+              <a class="btn btn-primary" href="cargadores.html"
+                ><span data-i18n="ev.cta">Ver cargadores</span
+                ><svg class="i" aria-hidden="true" focusable="false">
+                  <use href="#i-arrow" /></svg
+              ></a>
+            </div>
+            <div class="pic">
+              <img
+                src="images/cargador-on.webp"
+                width="342"
+                height="538"
+                loading="lazy"
+                decoding="async"
+                alt="Policharger ON-T2"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-	<meta itemprop="name" content="Paigi Electric - Electricistas en Dénia">
-	<meta itemprop="description" content="Instalaciones eléctricas en Dénia, Jávea y Óndara. Electricista autorizado, boletines eléctricos, reformas, cargadores de coche eléctrico, instalaciones eléctricas, iluminación de jardines y más">
-	<meta name="keywords" content="electricista Dénia, boletines eléctricos Dénia, instalación cargadores coche eléctrico Dénia, reformas eléctricas Jávea, mantenimiento comunidades eléctricas Dénia, iluminación de jardines, electricistas Alicante, instalaciones eléctricas Dénia">
+      <section class="section alt" id="imagenes">
+        <div class="wrap center">
+          <div class="sec-head" style="margin-left: auto; margin-right: auto">
+            <h2 data-i18n="wk.title">Trabajos realizados</h2>
+            <p data-i18n="wk.text">
+              Fotos originales de instalaciones y mantenimientos.
+            </p>
+          </div>
+          <div class="teaser">
+            <img
+              src="images/mantenimientos/thumbs/P1010267.webp"
+              width="480"
+              height="640"
+              loading="lazy"
+              decoding="async"
+              alt=""
+            />
+            <img
+              src="images/mantenimientos/thumbs/P1010137.webp"
+              width="480"
+              height="360"
+              loading="lazy"
+              decoding="async"
+              alt=""
+            />
+            <img
+              src="images/mantenimientos/thumbs/P1010269.webp"
+              width="480"
+              height="360"
+              loading="lazy"
+              decoding="async"
+              alt=""
+            />
+          </div>
+          <a class="btn btn-outline" href="imagenes.html"
+            ><span data-i18n="wk.cta">Ver todas las imágenes</span
+            ><svg class="i" aria-hidden="true" focusable="false">
+              <use href="#i-arrow" /></svg
+          ></a>
+        </div>
+      </section>
 
-	<meta property="og:title" content="Electricista en Dénia, Jávea y alrededores - Paigi Electric" />
-	<meta property="og:description" content="Instalaciones eléctricas, reformas, cargadores para coches eléctricos. Teléfono 630847550." />
-	<meta property="og:image" content="https://paigielectric.es/images/logo-paigi.png" />
-	<meta property="og:url" content="https://paigielectric.es/" />
+      <section class="section contact" id="contacto">
+        <div class="wrap">
+          <div>
+            <span
+              class="eyebrow"
+              style="color: var(--amber)"
+              data-i18n="nav.contact"
+              >Contacto</span
+            >
+            <h2 data-i18n="ct.title">Solicite presupuesto sin compromiso</h2>
+            <p class="lead" data-i18n="ct.lead">
+              Disponible para trabajos eléctricos urgentes y proyectos
+              planificados. Contacte por teléfono, WhatsApp o email.
+            </p>
+            <div class="cta">
+              <a class="btn btn-primary" href="tel:+34630847550"
+                ><svg class="i" aria-hidden="true" focusable="false">
+                  <use href="#i-phone" /></svg
+                >630 847 550</a
+              >
+              <a
+                class="btn btn-wa"
+                href="https://wa.me/34630847550"
+                target="_blank"
+                rel="noopener"
+                ><svg class="i" aria-hidden="true" focusable="false">
+                  <use href="#i-wa" /></svg
+                >WhatsApp</a
+              >
+              <a class="btn btn-ghost" href="mailto:paigielectric@gmail.com"
+                ><svg class="i" aria-hidden="true" focusable="false">
+                  <use href="#i-mail" /></svg
+                ><span data-i18n="ct.email">Email</span></a
+              >
+            </div>
+            <dl>
+              <dt data-i18n="ct.phone">Teléfono</dt>
+              <dd><a href="tel:+34630847550">630 847 550</a></dd>
+              <dt data-i18n="ct.email">Email</dt>
+              <dd>
+                <a href="mailto:paigielectric@gmail.com"
+                  >paigielectric@gmail.com</a
+                >
+              </dd>
+              <dt data-i18n="ct.zone">Zona de trabajo</dt>
+              <dd data-i18n="ct.zone.v">
+                Marina Alta de Alicante: Dénia, Jávea, Ondara…
+              </dd>
+              <dt data-i18n="ct.lic">Autorización</dt>
+              <dd data-i18n="ct.lic.v">
+                Carnet de instalador 2199315, autorizado por el Ministerio de
+                Industria desde 2003.
+              </dd>
+            </dl>
+          </div>
+          <img
+            src="images/contacto-640.webp"
+            srcset="
+              images/contacto-640.webp   640w,
+              images/contacto-1024.webp 1024w
+            "
+            sizes="(max-width:1000px) 92vw, 460px"
+            width="1024"
+            height="1024"
+            loading="lazy"
+            decoding="async"
+            alt="Cuadro de distribución eléctrica en una casa de madera con vistas al mar"
+            data-i18n-attr="alt:ct.alt"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <span
+          >&copy; <span id="year">2026</span>
+          <span data-i18n="ft.rights"
+            >Paigi Electric. Todos los derechos reservados.</span
+          ></span
+        >
+        <ul>
+          <li>
+            <a
+              href="assets/docs/CLU11_AVISO_LEGAL.pdf"
+              target="_blank"
+              rel="noopener"
+              data-i18n="ft.legal"
+              >Aviso legal</a
+            >
+          </li>
+          <li>
+            <a
+              href="assets/docs/CLU15_POLITICA_DE_PRIVACIDAD.pdf"
+              target="_blank"
+              rel="noopener"
+              data-i18n="ft.privacy"
+              >Política de privacidad</a
+            >
+          </li>
+          <li>
+            <a
+              href="assets/docs/POL%C3%8DTICA_DE_COOKIES.pdf"
+              target="_blank"
+              rel="noopener"
+              data-i18n="ft.cookies"
+              >Política de cookies</a
+            >
+          </li>
+          <li>
+            <button
+              class="linkbtn"
+              type="button"
+              id="cookie-open"
+              data-i18n="ft.cookieset"
+            >
+              Configurar cookies
+            </button>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
-	<link rel="stylesheet" href="assets/css/main.css" />
-	
-	<link rel="canonical" href="https://paigielectric.es/" />
-		
-		<script>
-		setTimeout(function() {	
-			var cookieConsent = localStorage.getItem('cookieConsent');
-			if (cookieConsent === 'false' || cookieConsent === null) {
-				showcookieConsent();
-			}
-		}, 100);
-		function showcookieConsent() {
-			var cookieChoiceElement = document.getElementById('cookieChoiceInfo');
-			cookieChoiceElement.style.display = 'block';
-		}
-		function _removeCookieConsent() {
-		  var cookieChoiceElement = document.getElementById('cookieChoiceInfo');
-		  if (cookieChoiceElement != null) {
-			cookieChoiceElement.parentNode.removeChild(cookieChoiceElement);
-		  }
-		  localStorage.setItem('cookieConsent', 'true');
-		}
-		</script>
-	
-	<script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@type": "LocalBusiness",
-			"name": "Paigi Electric",
-			"image": "http://paigielectric.es/images/logo-paigi.png",
-			"address": {
-			  "@type": "PostalAddress",
-			  "addressLocality": "Dénia",
-			  "addressRegion": "Alicante",
-			  "addressCountry": "ES"
-			  "postalCode": "03700"
-			},
-			"telephone": "+34 630847550",
-			"areaServed": ["Dénia", "Jávea", "Ondara"],
-			"url": "http://paigielectric.es",
-			"description": "Electricista autorizado en Dénia, Jávea, Ondara, .... Especialistas en instalaciones, reformas eléctricas y boletines.",
-			"openingHours": "Mo-Su 00:00-23:59",
-			"geo": {
-			  "@type": "GeoCoordinates",
-			  "latitude": 38.8400,
-			  "longitude": 0.1057
-			},
-			"sameAs": [
-			  "https://wa.me/34630847550",
-			  "mailto:paigielectric@gmail.com"
-			]  
-		  }
-		</script>	
-	</head>	
-	<body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WM8959N"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-	
-			<div id="cookieChoiceInfo" class="cookie-choices-info singleton-element">
-				<div class="cookie-choices-inner">
-					<span class="cookie-choices-text">Este sitio emplea cookies de Google para prestar sus servicios, para personalizar anuncios y para analizar el tráfico. 
-					Google recibe información sobre tu uso de este sitio web. Si utilizas este sitio web, se sobreentiende que aceptas el uso de cookies.</span>
-					<span class="cookie-choices-buttons">
-						<a href="https://policies.google.com/technologies/cookies?hl=es" target="_blank" class="cookie-choices-button">Más información</a>
-						<a href="javascript: _removeCookieConsent()" class="cookie-choices-button">Entendido</a>
-					</span>
-				</div>
-			</div>
-	
-	<!-- Header -->
-	<section id="header">
-		<header>
-			<span class="image avatar">
-				<a href="http://paigielectric.es/" title="Paigi Electric"><img src="images/logo-paigi.png" alt="Paigi Electric" title="Paigi Electric"/></a>
-			</span>
-			<h1 id="logo"><a href="http://paigielectric.es/" class="title" title="Paigi Electric">Paigi Electric</a></h1>
-			<p>Teléfono: <a href="tel:630847550" title="Contacta por Teléfono con Paigi Electric">630847550</a></p>
-			<p><span class="warning">Abierto 24 horas</span></p>
-			<span class="icon solid fa-plug"></span>
-			<p>Instalador Eléctrico Autorizado</p>
-		</header>				
-		<nav id="nav">					
-			<ul>						
-				<li><a href="#quienessomos" title="Quienes somos">Quiénes somos</a></li>
-				<li><a href="#laempresa" title="La Empresa">La Empresa</a></li>
-				<li><a href="#productos" title="Productos y servicios">Productos y servicios</a></li>
-				<li><a href="#contacto" title="Contacto">Contacto</a></li>
-				<li class="border-top"><a href="http://paigielectric.es/cargadores.html" title="Cargadores para coches eléctricos">Cargadores para coches eléctricos</a></li>
-				<li class="border-top"><a href="http://paigielectric.es/imagenes.html" title="Imágenes de Mantenimientos">Imágenes de Mantenimientos</a></li>
+    <div class="mbar">
+      <a class="btn btn-primary" href="tel:+34630847550"
+        ><svg class="i" aria-hidden="true" focusable="false">
+          <use href="#i-phone" /></svg
+        ><span data-i18n="hero.call">Llamar ahora</span></a
+      >
+      <a
+        class="btn btn-wa"
+        href="https://wa.me/34630847550"
+        target="_blank"
+        rel="noopener"
+        ><svg class="i" aria-hidden="true" focusable="false">
+          <use href="#i-wa" /></svg
+        >WhatsApp</a
+      >
+    </div>
 
-			</ul>				
-		</nav>
-	</section>		
-	<!-- Wrapper -->			
-	<div id="wrapper">				
-		<!-- Main -->					
-		<div id="main">						
-			<!-- quienessomos -->
-			<section id="quienessomos">
-				<div class="container">
-					<header class="major">
-
-<h3><span class="icon solid fa-plug"></span>&nbsp;Empresa de Instalaciones Eléctricas</h3>
-
-<p style="font-weight: bold;">SOLICITE PRESUPUESTO SIN COMPROMISO:</p>
-<p>Estoy disponible para trabajos eléctricos urgentes y proyectos planificados. Contacta por teléfono, whatsapp o email.</p>
-<div class="row" style="margin-bottom: 1rem;">
-	<div class="w-50 box-telefono">
-		<span class="telefono">Teléfono:&nbsp;<a href="tel:630847550" title="Contacta por Teléfono con Paigi Electric">630847550</a></span>
-	</div>
-	<div class="w-50 box-whatsapp">
-		<span class="whatsapp"><a href="https://wa.me/34630847550" target="_blank" title="Contacta por WhatsApp con Paigi Electric">Por WhatsApp</a></span>
-	</div>
-</div>
-<h4>(Zona de Trabajo en Marina Alta de Alicante: Dénia, Jávea, Ondara, ...)</h4>
-<p><span style="color: #B71C1C;">Abierto 24 horas</span></p>
-
-<p>Nos ocupamos de todo lo referente a la electricidad, incluida la realización de boletines (esquemas, planos, memorias, etc).</p>
-<p>Solicitamos el alta en la compañía y hacemos las gestiones pertinentes.</p>
-<p>En <strong>Paigi Electric</strong> realizamos, además: reformas eléctricas, ampliaciones de potencia, iluminación  de jardines, alumbrado público, mantenimiento de comunidades.</p>
-
-<p><strong>¿Tiene un coche eléctrico?</strong> Le instalamos el sistema de recarga en su domicilio.</p>
-<p>Póngase en contacto con nosotros y le informaremos:</br>
-
-<div class="row" style="margin-bottom: 1rem;">
-	<div class="w-50 box-telefono">
-		<span class="telefono">Teléfono:&nbsp;<a href="tel:630847550" title="Contacta por Teléfono con Paigi Electric">630847550</a></span>
-	</div>
-	<div class="w-50 box-whatsapp">
-		<span class="whatsapp"><a href="mailto:paigielectric@gmail.com" title="Contacta por Email con Paigi Electric" target="_blank">Por Email</a></span>
-	</div>
-</div>
-
-<p><strong>Carnet de Instalador 2199315, autorizado por el Ministerio de Industria desde el año 2003.</strong></p>
-					</header>								
-				</div>							
-			</section>
-			<!-- La Empresa-->
-			<section id="laempresa">								
-				<div class="container">	
-					<h3>La Empresa</h3>
-					<header class="major">										
-						<p>
-<p>Estamos muy orgullosos de ajustarnos a las necesidades de nuestros clientes con un servicio integral y personalizado.</p>
-<p>Además, para ofrecer la máxima atención, todo nuestro personal dispone de teléfonos para realizar los servicios lo antes posible.</p>
-<p>Confiamos en las primeras marcas del sector de la electricidad como Pirelli, Legrand, Simon, Wegi, etc.</p>
-						</p>
-					</header>								
-				</div>							
-			</section>
-			<!-- Productos y servicios -->
-			<section id="productos">
-				<div class="container">
-					<h3>Productos y Servicios</h3>				
-					<header class="major">										
-						<p>
-<p>En una instalación eléctrica, por muy sencilla que sea, es importante cumplir con los parámetros establecidos para garantizar su buen funcionamiento.</p>
-<p>Por ello, es fundamental contratar una empresa responsable y profesional que ofrezca todo tipo de garantías.</p>
-<p>En nuestra empresa apostamos por la mejora continua, incrementando nuestros servicios e integrando nuevos recursos y tecnología, que nos ha permitido posicionarnos como una empresa solvente de referencia, 
-capaz de satisfacer las necesidades de nuestros clientes.</p>
-<p>En <strong>Paigi Electric</strong> le ofrecemos un servicio integral y garantizado en los siguientes tipos de instalaciones:</p>
-<ul>
-	<li>Redes eléctricas de baja tensión</li>
-	<li>Instalaciones para cargadores de coches eléctricos</li>
-	<li>Energía eléctrica solar</li>
-	<li>También realizamos:
-		<ul>
-			<li>Instalaciones y reformas eléctricas</li>
-			<li>Iluminación de jardines</li>
-			<li>Alumbrado público</li>
-			<li>Mantenimiento de comunidades</li>
-		</ul>
-	</li>
-</ul>
-
-<p>Contamos con personal altamente cualificado y con la máxima competencia profesional para realizar las instalaciones.</p>
-					</header>								
-				</div>							
-			</section>			
-			<!-- Six -->
-			<section id="contacto">
-				<div class="container">
-					<h3>Datos de Contacto</h3>
-					<div class="features">
-						<article>
-							<span class="image"><img class="w-50" src="images/gen-03.jpg" Title="Paigi Electric" alt="Paigi Electric" /></span>
-							<div class="inner">
-								<p>
-									<h2>Instalador autorizado: 2199315</h2>
-									<h2>Teléfono: <a href="tel:630847550">630847550</a></h2>
-									<h2>Dirección: Dénia, Jávea, Ondara, ...</h2>
-									<h2><a href="mailto:paigielectric@gmail.com" title="Email Paigi Electric" target="_blank">Email Paigi Electric</a></h2>
-								</p>
-							</div>
-						</article>
-					</div>
-				</div>
-			</section>
-		</div>
-		<!-- Footer -->
-		<section id="footer">
-			<div class="container">
-				<ul class="copyright">
-					<li>&copy; Todos los derechos reservados.</li>
-					<li><a href="http://paigielectric.es/assets/docs/CLU11_AVISO_LEGAL.pdf" target="_blank" title="Aviso Legal">Aviso Legal</a></li>
-					<li><a href="http://paigielectric.es/assets/docs/CLU15_POLITICA_DE_PRIVACIDAD.pdf" target="_blank" title="Pol&iacute;tica de Privacidad">Pol&iacute;tica de Privacidad</a></li>
-					<li><a href="http://paigielectric.es/assets/docs/POLÍTICA_DE_COOKIES.pdf" target="_blank" title="Pol&iacute;tica de Cookies">Pol&iacute;tica de Cookies</a></li>
-				</ul>
-			</div>
-		</section>
-	</div>
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollzer.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-	<script src="assets/js/main.js"></script>	
-	
-	</body>
+    <div
+      class="cookie"
+      id="cookie-banner"
+      role="dialog"
+      aria-live="polite"
+      hidden
+    >
+      <p data-i18n="ck.text">
+        Este sitio utiliza cookies de Google para analizar el tráfico y mejorar
+        el servicio. Puede aceptarlas o rechazarlas; no se cargará ninguna
+        herramienta de análisis sin su consentimiento.
+      </p>
+      <div class="row">
+        <button
+          class="btn btn-primary"
+          type="button"
+          id="cookie-accept"
+          data-i18n="ck.accept"
+        >
+          Aceptar
+        </button>
+        <button
+          class="btn btn-outline"
+          type="button"
+          id="cookie-reject"
+          data-i18n="ck.reject"
+        >
+          Rechazar
+        </button>
+        <a
+          class="cookie-more"
+          href="https://policies.google.com/technologies/cookies?hl=es"
+          target="_blank"
+          rel="noopener"
+          data-i18n="ck.more"
+          >Más información</a
+        >
+      </div>
+    </div>
+  </body>
 </html>
